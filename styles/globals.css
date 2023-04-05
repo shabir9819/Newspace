@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.pagination_btn:hover {
+.btn__list .active {
   background: rgb(27, 254, 198);
+  background: blue;
+  color: white;
+}
+.inactive:hover {
+  background: rgb(165, 204, 245);
   background: linear-gradient(
-    27deg,
-    rgba(27, 254, 198, 1) 2%,
-    rgba(38, 0, 255, 1) 55%,
-    rgba(201, 233, 238, 1) 100%
+    173deg,
+    rgba(165, 204, 245, 1) 14%,
+    rgba(38, 0, 255, 1) 73%,
+    rgba(201, 233, 238, 1) 99%
   );
   color: white;
 }

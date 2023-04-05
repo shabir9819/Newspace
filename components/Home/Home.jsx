@@ -35,7 +35,7 @@ export default function Home() {
     },[])
     return (
       <>
-      <div className="relative w-full ">
+      <div className="relative w-full overflow-hidden">
 
       <Navbar/>
      {(data !== "") && <Pagination data ={data} setData= {setData} recordsPerPage={recordsPerPage}/>}

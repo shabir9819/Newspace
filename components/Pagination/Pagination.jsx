@@ -53,11 +53,11 @@ export default function Pagination({ data, setData, recordsPerPage }) {
     </div>}
 
       
-      <div className="flex justify-center items-center my-[50px] w-full">
+      <div className="btn__list flex justify-center items-center my-[50px] w-full">
 
       <button  className=" border-[1px] border-gray-400 px-3 py-1 rounded-sm " onClick={prePage} > <div className="w-full h-full hover:translate-x-[-5px]">«</div> </button>
       {numbers.map((num) => (
-        <li className={`pagination_btn list-none px-3 py-1 bg-[#e9ecef] border-[1px] border-gray-400 cursor-pointer rounded-sm  ${(currentPage === num) ? "bg-[#007bff]" : "bg-[#e9ecef] hover:bg-[#b7cadf]"} `} key={num} onClick={()=>clickPage(num)}>{num}</li>
+        <li className={`pagination_btn  list-none px-3 py-1 bg-[#e9ecef] border-[1px] border-gray-400 cursor-pointer rounded-sm  ${(currentPage === num) ? "active" : "inactive"} `} key={num} onClick={()=>clickPage(num)}>{num}</li>
         ))}
       <button className=" border-[1px] border-gray-400 px-3 py-1 rounded-sm" onClick={nextPage}> <div className="w-full h-full hover:translate-x-[5px]">»</div> </button>
         </div>
