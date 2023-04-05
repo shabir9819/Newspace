@@ -35,8 +35,11 @@ export default function Home() {
     },[])
     return (
       <>
+      <div className="relative w-full ">
+
       <Navbar/>
      {(data !== "") && <Pagination data ={data} setData= {setData} recordsPerPage={recordsPerPage}/>}
+      </div>
       </>
     )
   }
