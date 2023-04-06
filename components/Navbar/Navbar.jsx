@@ -1,15 +1,13 @@
-
-
 export default function Navbar() {
   return (
     <>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light ">
-  <div className="container-fluid">
-    <a className="navbar-brand uppercase" href="#">newspace</a>
-    
-    
-  </div>
-</nav>
+      <nav className="navbar1 ">
+        <div className="nav__wrapper">
+          <a  href="#">
+            newspace
+          </a>
+        </div>
+      </nav>
     </>
-  )
+  );
 }

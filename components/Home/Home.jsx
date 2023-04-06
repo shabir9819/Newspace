@@ -2,8 +2,9 @@ import React from "react";
 import Navbar from "@/components/Navbar/Navbar"
 import Pagination from "@/components/Pagination/Pagination"
 import { useEffect, useState } from "react";
-import axios from "axios";
+
 import { apiData } from "@/config/text";
+
 
 export default function Home() {
     const [data, setData] = useState("") ;
@@ -35,7 +36,7 @@ export default function Home() {
     },[])
     return (
       <>
-      <div className="relative w-full overflow-hidden">
+      <div className="home__wrapper">
 
       <Navbar/>
      {(data !== "") && <Pagination data ={data} setData= {setData} recordsPerPage={recordsPerPage}/>}

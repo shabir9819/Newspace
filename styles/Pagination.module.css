@@ -1,0 +1,69 @@
+.card__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 8px;
+    position: relative;
+}
+
+.btn__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    width: 100%;
+}
+.pre__btn, .next__btn{
+    border: 1px solid rgb(156 163 175);
+    padding:4px 16px;
+    border-radius: 2px;
+}
+.pre__btn > div, .next__btn > div{
+    height: 100%;
+   width: 100%;
+}
+.pre__btn:hover >div{
+    transform: translateX(-5px);
+}
+.next__btn:hover >div{
+    transform: translateX(5px);
+}
+.pagination__btn{
+  list-style: none;
+  padding: 4px 16px ;
+  background: #e9ecef;
+  border: 1px solid rgb(156 163 175);
+  cursor: pointer;
+  border-radius: 2px;
+  color: black;
+}
+.active {
+    background: rgb(27, 254, 198);
+    background: blue;
+    color: white;
+  }
+  .inactive:hover {
+    background: rgb(165, 204, 245);
+    background: linear-gradient(
+      173deg,
+      rgba(165, 204, 245, 1) 14%,
+      rgba(38, 0, 255, 1) 73%,
+      rgba(201, 233, 238, 1) 99%
+    );
+    color: white;
+  }
+
+
+
+@media screen and (100px < width < 764px) {
+    .card__container{
+        flex-direction: column;
+        margin: 4px 0px;
+        padding: 0px 4px;
+        
+    }
+}
